@@ -17,7 +17,7 @@ Follow these instructions to add your mod to Roblox web
 ## Adding your mod
 ### Theme
 - Go to the theme folder and replace the icons like you would with any other mod
-- Go back to the root directory and open 'inject.css' in your text editor (I recommend using VSCode or Notepad++, but any other text editor will work)
+- Go back to the root directory and open `inject.css` in your text editor (I recommend using VSCode or Notepad++, but any other text editor will work)
 - Add your theme colors at '--theme-color' and '--theme-color-solid'
   - '--theme-color-solid' can't be a gradient because it's used for things like outlined buttons and active tab indicators (eg: About/Gamepasses/Server)
     (adding a gradient anyways will result in your color becoming invisible)
