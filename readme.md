@@ -7,7 +7,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">Ro
 - Download and extract Roblox_Web_Extension_Template.zip
 - Move the extracted folder to where you wish to store your extension
 - Rename the folder to the name of your mod
-- Open your browser and go to [chrome://extensions](chrome://extensions)
+- Open your browser and go to `chrome://extensions`
 - Enable developer mode (top right)
 - Press <kbd>Load unpacked</kbd> and select your folder
 - Your extension should now appear in your list of extensions. Underneath your extension you will see your extension ID, copy this and save it somewhere (notepad) because you will need it later
