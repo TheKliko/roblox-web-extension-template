@@ -41,20 +41,30 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
   - Replace 'Template' with the name of your mod
   - Replace 'made by kliko' with whatever you want
 - To change the font, text color or background: open style.css and change the values at lines 5-11
-  - example:
-  ```css
-  --background: linear-gradient(45deg, #000000, #222222) no-repeat;
+    - example:
+    ```css
+    --background: linear-gradient(45deg, #000000, #222222) no-repeat;
 
-  --header-color: linear-gradient(0deg, #888, #fff, #888) no-repeat;
-  --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --header-color: linear-gradient(0deg, #888, #fff, #888) no-repeat;
+    --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  --footer-color: #fff;
-  --footer-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  ```
+    --footer-color: #fff;
+    --footer-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ```
+
+### Console logging
+- Open `inject.js`
+- Replace
+    - example:
+    ```js
+    console.log('Roblox mod template (web extension) - injection success');
+    ```
 
 
 
 ## Disclaimer
 This extension has *not* been tested for compatibility with other extensions
+
 This extension *will* break when Roblox decides to update their website
-There are most likely more efficient methods of doing this
+
+There are probably more efficient methods of doing this
