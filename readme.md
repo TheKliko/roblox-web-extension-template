@@ -54,11 +54,15 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 
 ### Console logging
 - Open `inject.js`
-- Replace <var>Roblox mod template (web extension) - injection success</var> with the message you want to display in the developer tools console
+- Replace '<var>Roblox mod template (web extension) - injection success</var>' with the message you want to display in the developer tools console
     - example:
         ```js
         console.log('Roblox mod template (web extension) - injection success');
         ```
+
+### Reloading your extension
+- Open your browser and go to `chrome://extensions`
+- Press the <kbd>Reload</kbd> button under your extension to update it
 
 
 
