@@ -4,7 +4,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 
 
 ## Getting started
-- Download and extract Roblox_Web_Extension_Template.zip
+- Download and extract <var>Roblox_Web_Extension_Template.zip</var>
 - Move the extracted folder to where you wish to store your extension
 - Rename the folder to the name of your mod
 - Open your browser and go to `chrome://extensions`
