@@ -29,7 +29,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
         --theme-color-solid: #cc0037;
         ```
 - Finally, press <kbd>CTRL</kbd>+<kbd>F</kbd> to open the find and replace menu
-    - Search for <var>extensionID</var> and use the <kbd>Replace</kbd> All function to replace it with the ID of your extension
+    - Search for <var>extensionID</var> and use the <kbd>Replace All</kbd> function to replace it with the ID of your extension
 
 ### Optional items
 - Open `inject.css` and scroll down to line 35
