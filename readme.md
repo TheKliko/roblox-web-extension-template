@@ -73,6 +73,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 ### Reloading your extension
 - Open your browser and go to `chrome://extensions`
 - Press the <kbd>Reload</kbd> button under your extension to update it
+    - This needs to be done every time you change something
 
 
 
