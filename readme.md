@@ -81,3 +81,4 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 - This extension has *not* been tested for compatibility with other extensions
 - This extension *will* break when Roblox decides to update their website
 - There are probably more efficient methods of doing this
+- This extension only covers the main site
