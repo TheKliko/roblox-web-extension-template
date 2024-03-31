@@ -1,5 +1,5 @@
-# <img src="images/icon-32.png"> Roblox Web Extension
-Follow these instructions to add your mod to <a href="https://www.roblox.com">Roblox</a>
+# <img src="images/icon-32.png"> Roblox Web Extension Template
+Follow these instructions to add your mod to <a href="https://www.roblox.com">roblox.com</a>
 
 
 
@@ -8,7 +8,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">Ro
 - Move the extracted folder to where you wish to store your extension
 - Rename the folder to the name of your mod
 - Open your browser and go to `chrome://extensions`
-- Enable developer mode (top right)
+- Enable developer mode
 - Press <kbd>Load unpacked</kbd> and select your folder
 - Your extension should now appear in your list of extensions. Underneath your extension you will see your extension ID, copy this and save it somewhere (notepad) because you will need it later
 
@@ -18,7 +18,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">Ro
 ### Theme
 - Go to the theme folder and replace the icons like you would with any other mod
 - Go back to the root directory and open inject.css in your text editor (I recommend using VSCode or Notepad++, but any other text editor will work)
-- Add your theme colors at '--theme-color' and '--theme-color-solid' (lines 29-30)
+- Add your theme color to the variables at lines 29 and 30
   - '--theme-color-solid' can't be a gradient because it's used for things like outlined buttons and active tab indicators (eg: About/Gamepasses/Server)
     (adding a gradient anyways will result in your color becoming invisible)
   - example:
