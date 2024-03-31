@@ -1,5 +1,5 @@
 # <img src="images/icon-32.png"> Roblox Web Extension
-Follow these instructions to add your mod to Roblox web
+Follow these instructions to add your mod to <a href="https://www.roblox.com">Roblox</a>
 
 
 
