@@ -1,0 +1,529 @@
+/* 
+    GETTING STARTED:
+    • Change the variables to be the colors of your theme
+        • --theme-color can be any color type:
+            • HEX: #fff, #ffffff, #ffffffff
+            • rgb: rgb(255,255,255)
+            • rgba: rgba(255,255,255,255)
+            • gradient: linear-gradient(0deg, #ffffff, #ffffff)
+        • --theme-color-solid MUST be a solid color:
+            • HEX: #fff, #ffffff, #ffffffff
+            • rgb: rgb(255,255,255)
+            • rgba: rgba(255,255,255,255)
+          (choosing a different color type will result in your color becoming invisible)
+          (used for outlined buttons, selected tab indicator, certain input types)
+    • Press CTRL+F and search for 'extensionID', replace this with the ID of your extension
+    
+    FINDING YOUR EXTENSION ID:
+    • Go to chrome://extensions
+    • Enable developer mode
+    • Load your extension by pressing 'Load unpacked'
+    • Copy the id shown below your extension
+
+    COMPATIBILITY:
+    • This extension has NOT been tested for compatibility with other extensions
+*/
+
+:root {
+    /* VARIABLES */
+    --theme-color: #fff;
+    --theme-color-solid: #fff;
+}
+
+
+
+/* Optional content, COMMENT/UNCOMMENT to remove/apply */
+/* Play button */
+/* .btn-common-play-game-lg {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-common-play-game-lg:hover {
+    filter: brightness(1.1);
+} */
+
+/* server player count bar */
+.server-player-count-gauge {
+    border-color: var(--theme-color-solid) !important;
+}
+.gauge-inner-bar {
+    background: var(--theme-color-solid) !important;
+    border-color: var(--theme-color-solid) !important;
+}
+
+/* Range selector background */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--theme-color-solid) !important;
+}
+input[type="range"]::-moz-range-track {
+    background: var(--theme-color-solid) !important;
+}
+input[type="range"]::-ms-track {
+    background: var(--theme-color-solid) !important;
+}
+
+/* Headings/titles */
+h1 {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+h2 {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+h3:not(.subscription-count) {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.font-title {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.medium-header {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.extra-bold-header {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.modal-title {
+    background: var(--theme-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Chat popup header */
+/* .chat-windows-header {
+    background: var(--theme-color) !important;
+} */
+
+
+
+/* button/toggles/etc. */
+/* Toggles */
+.btn-toggle.on {
+    background: var(--theme-color) !important;
+}
+.btn-toggle:hover {
+    filter: brightness(1.1);
+}
+
+/* Checkboxes */
+.checkbox input[type=checkbox]+label:before {
+    border-color: var(--theme-color-solid) !important;
+}
+.checkbox input[type=checkbox]:checked+label:before {
+    background-image: url('chrome-extension://extensionID/theme/generic_11062018.png') !important;
+    background-position: -14px -1106px !important;
+    background-color: #232527 !important;
+}
+
+/* R6/R15 toggle */
+.pill-toggle {
+    border: solid 1px var(--theme-color-solid);
+    padding: 1px !important;
+}
+.dark-theme .pill-toggle input:checked+label {
+    background-color: var(--theme-color-solid) !important;
+    border: solid 1px var(--theme-color-solid);
+}
+
+/* Range selector */
+input[type="range"]::-webkit-slider-thumb {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+input[type="range"]::-moz-range-thumb {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+input[type="range"]::-ms-thumb {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+
+/* Radio buttons */
+.radio input[type=radio]:checked+label:after {
+    background: var(--theme-color-solid) !important;
+}
+.radio label:before {
+    border: 1px solid var(--theme-color-solid) !important;
+}
+.color-dot.active:after {
+    border: 2px solid var(--theme-color-solid) !important;
+}
+
+/* Buttons */
+.btn-primary-lg:not(.shopping-cart-add-remove-btn-container .btn-primary-lg) {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-primary-lg:not(.shopping-cart-add-remove-btn-container .btn-primary-lg) {
+    filter: brightness(1.1);
+}
+
+.btn-primary-md:not(.game-server-join-btn, .btn-common-play-game-lg, .carousel-controls) {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-primary-md:not(.game-server-join-btn, .btn-common-play-game-lg, .carousel-controls):hover {
+    filter: brightness(1.1);
+}
+
+.btn-cta-md {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-cta-md:hover {
+    filter: brightness(1.1);
+}
+.btn-cta-sm {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-cta-sm:hover {
+    filter: brightness(1.1);
+}
+.btn-growth-sm {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-growth-sm:hover {
+    filter: brightness(1.1);
+}
+.btn-growth-md {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-growth-md:hover {
+    filter: brightness(1.1);
+}
+.btn-growth-lg {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-growth-lg:hover {
+    filter: brightness(1.1);
+}
+.btn-control-small {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-control-small:hover {
+    filter: brightness(1.1);
+}
+.btn-control-lg {
+    background: var(--theme-color) !important;
+    border: none !important;
+}
+.btn-control-lg:hover {
+    filter: brightness(1.1);
+}
+.highlight-badge {
+    background: var(--theme-color) !important;
+}
+.highlight-badge:hover {
+    filter: brightness(1.1);
+}
+.virtual-item-badge {
+    background: var(--theme-color) !important;
+}
+.virtual-item-badge:hover {
+    filter: brightness(1.1);
+}
+
+/* Outlined buttons */
+.btn-secondary-xs {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-secondary-xs:hover {
+    filter: brightness(1.1);
+}
+.btn-secondary-md {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-secondary-md:hover {
+    filter: brightness(1.1);
+}
+.btn-secondary-lg {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-secondary-lg:hover {
+    filter: brightness(1.1);
+}
+.btn-control-xs {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-control-xs:hover {
+    filter: brightness(1.1);
+}
+.btn-control-sm {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-control-sm:hover {
+    filter: brightness(1.1);
+}
+.btn-control-md {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-control-md:hover {
+    filter: brightness(1.1);
+}
+.login-section button {
+    border-color: var(--theme-color-solid) !important;
+}
+.login-section button:hover {
+    filter: brightness(1.1);
+}
+.btn-buy-md {
+    border-color: var(--theme-color-solid) !important;
+}
+.btn-buy-md:hover {
+    filter: brightness(1.1);
+}
+.dropdown-toggle {
+    border-color: var(--theme-color-solid) !important;
+}
+.dropdown-toggle:hover {
+    filter: brightness(1.1);
+}
+.input-dropdown-btn {
+    border-color: var(--theme-color-solid) !important;
+}
+.input-dropdown-btn:hover {
+    filter: brightness(1.1);
+}
+.rbx-select:not(.birthday-container .rbx-select) {
+    border-color: var(--theme-color-solid) !important;
+}
+.rbx-select:not(.birthday-container .rbx-select):hover {
+    filter: brightness(1.1);
+}
+.border:not(.server-player-count-gauge, .gauge-inner-bar) {
+    border-color: var(--theme-color-solid) !important;
+}
+.social-link:hover .border {
+    filter: brightness(1.1);
+}
+.shopping-cart-add-remove-btn-container .btn-primary-lg {
+    color: #888 !important;
+    background: none !important;
+    border-color: var(--theme-color-solid) !important;
+}
+.shopping-cart-add-remove-btn-container .btn-primary-lg:hover {
+    filter: brightness(1.1);
+}
+
+/* Tab indicators */
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active {
+    box-shadow: inset 0 -4px 0 0 var(--theme-color-solid) !important;
+}
+.nav-tabs .active .rbx-tab-heading {
+    box-shadow: inset 0 -4px 0 0 var(--theme-color-solid) !important;
+}
+.menu-vertical .active {
+    box-shadow: inset 4px 0 0 0 var(--theme-color-solid) !important;
+}
+
+/* Marketplace type selector??? */
+.topic-container .topic-carousel .selected-topic {
+    background: var(--theme-color) !important;
+}
+.topic-container .topic-carousel .selected-topic .icon-close {
+    filter: invert(100) !important;
+}
+
+
+
+/* Icons */
+.icon-default-logo, .icon-logo {
+    background: url('chrome-extension://extensionID/theme/roblox_logo_08292022.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position-y: center !important;
+    background-position-x: center !important;
+}
+
+.modal-lock-icon {
+    background: url('chrome-extension://extensionID/theme/lock.png') !important;
+    background-repeat: no-repeat !important;
+    background-position-y: center !important;
+    background-position-x: center !important;
+}
+
+.icon-additem, .icon-arrow-right-blue, .icon-down-16x16, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-right, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
+    background-image: url('chrome-extension://extensionID/theme/generic_11062018.png') !important;
+}
+
+.icon-password-show-v2 {
+    background: url('chrome-extension://extensionID/theme/password-show.png') !important;
+}
+.icon-password-hide-v2 {
+    background: url('chrome-extension://extensionID/theme/password-hide.png') !important;
+}
+
+.gender-male {
+    background-image: url('chrome-extension://extensionID/theme/gender-male.png') !important;
+}
+
+.gender-female {
+    background-image: url('chrome-extension://extensionID/theme/gender-female.png') !important;
+}
+
+.icon-common-refresh-sm, .icon-common-search-sm, .icon-default-uiblox-common-sm {
+    background-image: url('chrome-extension://extensionID/theme/search.png') !important;
+}
+
+.dark-theme .icon-actions-clear-sm, .dark-theme .icon-actions-date-sm, .dark-theme .icon-actions-info-sm, .dark-theme .icon-default-actions-sm {
+    background-image: url('chrome-extension://extensionID/theme/actions_sm.png') !important;
+}
+
+.icon-default-camera {
+    background-image: url('chrome-extension://extensionID/theme/camera.png') !important;
+}
+
+.passkey-upsell-icon {
+    background-image: url('chrome-extension://extensionID/theme/passkey-upsell.png') !important;
+    filter: none !important;
+}
+
+.icon-default-menu, .icon-menu-avatar-off, .icon-menu-avatar-on, .icon-menu-blog, .icon-menu-chat-off, .icon-menu-chat-on, .icon-menu-customize, .icon-menu-document, .icon-menu-email, .icon-menu-feed, .icon-menu-friends, .icon-menu-friends-on, .icon-menu-games-off, .icon-menu-games-on, .icon-menu-giftcard, .icon-menu-groups, .icon-menu-home-off, .icon-menu-home-on, .icon-menu-inventory-off, .icon-menu-inventory-on, .icon-menu-library, .icon-menu-memory, .icon-menu-mobile, .icon-menu-more-off, .icon-menu-more-on, .icon-menu-profile, .icon-menu-recover, .icon-menu-shop, .icon-menu-trade, .icon-menu-wallet {
+    background-image: url('chrome-extension://extensionID/theme/menu.png') !important;
+}
+
+.icon-default-navigation, .icon-nav-blog, .icon-nav-charactercustomizer, .icon-nav-friends, .icon-nav-giftcards, .icon-nav-group, .icon-nav-home, .icon-nav-inventory, .icon-nav-menu, .icon-nav-message, .icon-nav-my-feed, .icon-nav-notification-stream, .icon-nav-profile, .icon-nav-robux, .icon-nav-search-white, .icon-nav-settings, .icon-nav-shop, .icon-nav-trade {
+    background-image: url('chrome-extension://extensionID/theme/navigation.png') !important;
+}
+
+.icon-default-economy-28x28, .icon-robux-28x28, .icon-robux-gold-28x28, .icon-robux-gray, .icon-robux-white:not(.robux-upsell .icon-robux-white) {
+    background-image: url('chrome-extension://extensionID/theme/economy_28x28.png') !important;
+}
+
+.icon-common-notification-bell, .icon-common-play, .icon-common-refresh, .icon-common-search, .icon-default-uiblox-common {
+    background-image: url('chrome-extension://extensionID/theme/common.png') !important;
+}
+
+.icon-default-premium-small, .icon-premium-small {
+    background-image: url('chrome-extension://extensionID/theme/premium_sm.png') !important;
+}
+
+.icon-premium-88x88 {
+    background-image: url('chrome-extension://extensionID/theme/premium_88x88.png') !important;
+}
+
+.icon-premium-120x120 {
+    background-image: url('chrome-extension://extensionID/theme/premium_120x120.png') !important;
+}
+
+.icon-back-to-top {
+    background-image: url('chrome-extension://extensionID/theme/back-to-top.png') !important;
+}
+
+.icon-robux-medium, .icon-robux-medium-desktop {
+    background-image: url('chrome-extension://extensionID/theme/robux_156x169.png') !important;
+}
+
+.icon-trade-160x160 {
+    background-image: url('chrome-extension://extensionID/theme/trade_icon.png') !important;
+}
+
+.icon-robux-130x130 {
+    background-image: url('chrome-extension://extensionID/theme/robux_130x130.png') !important;
+}
+
+.icon-ten-percent-more {
+    background-image: url('chrome-extension://extensionID/theme/ten_percent_more.png') !important;
+}
+
+.icon-default-economy-small, .icon-robux-16x16, .icon-robux-gold-16x16, .icon-robux-gray-16x16, .icon-robux-white-16x16 {
+    background-image: url('chrome-extension://extensionID/theme/economy_small.png') !important;
+}
+
+.dark-theme .game-card-info .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .dark-theme .game-card-info .info-label.icon-votes-gray, .dark-theme .game-card-info .info-label.icon-votes-gray-white-70, .dark-theme .gotham-font .refresh-link-icon:after, .dark-theme .gotham-font .see-all-link-icon:after, .gotham-font.dark-theme .refresh-link-icon:after, .gotham-font.dark-theme .see-all-link-icon:after, .gotham-font.light-theme .refresh-link-icon:after, .gotham-font.light-theme .see-all-link-icon:after, .icon-currently-playing-sm, .icon-default-common-sm, .icon-push-right-sm, .icon-rating-sm, .icon-refresh-sm, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .light-theme .game-card-info .info-label.icon-votes-gray, .light-theme .game-card-info .info-label.icon-votes-gray-white-70, .light-theme .gotham-font .refresh-link-icon:after, .light-theme .gotham-font .see-all-link-icon:after {
+    background-image: url('chrome-extension://extensionID/theme/common_sm_12032018.png') !important;
+}
+
+.icon-chat-add-friends, .icon-chat-arrow-right, .icon-chat-back, .icon-chat-close-black, .icon-chat-close-white, .icon-chat-error, .icon-chat-friends, .icon-chat-group-create, .icon-chat-group-label, .icon-chat-group-name, .icon-chat-info-black, .icon-chat-info-white, .icon-chat-more-dialogs, .icon-chat-more-options, .icon-chat-notification, .icon-chat-notification-mute, .icon-chat-party-label-black, .icon-chat-party-label-white, .icon-chat-pin, .icon-chat-pinned, .icon-chat-place-favorite, .icon-chat-place-my, .icon-chat-place-popular, .icon-chat-place-recent, .icon-chat-place-recommended, .icon-chat-place-vip, .icon-chat-play-together, .icon-chat-resend, .icon-chat-search, .icon-chat-search-cancel, .icon-chat-search-white, .icon-chat-selected, .icon-chat-set-place, .icon-chat-unpin, .icon-default-chat {
+    background-image: url('chrome-extension://extensionID/theme/chat_02142018.png') !important;
+}
+
+.icon-blocked {
+    background-image: url('chrome-extension://extensionID/theme/moderated-asset.png') !important;
+}
+
+.profile-accoutrements-page-container .page-active {
+    background: var(--theme-color);
+}
+
+.profile-accoutrements-page:hover {
+    background: var(--theme-color);
+}
+
+.icon-broken {
+    background-image: url('chrome-extension://extensionID/theme/icon-broken.png') !important;
+}
+
+.icon-bc-label, .icon-default-iconlabels, .icon-limited-bc-label, .icon-limited-label, .icon-limited-obc-label, .icon-limited-tbc-label, .icon-limited-unique-bc-label, .icon-limited-unique-label, .icon-limited-unique-obc-label, .icon-limited-unique-tbc-label, .icon-obc-label, .icon-rthro-label, .icon-rthro-limited-label, .icon-tbc-label, .icon-thirteen-plus-bc-label, .icon-thirteen-plus-label, .icon-thirteen-plus-limited-bc-label, .icon-thirteen-plus-limited-label, .icon-thirteen-plus-limited-obc-label, .icon-thirteen-plus-limited-tbc-label, .icon-thirteen-plus-limited-unique-bc-label, .icon-thirteen-plus-limited-unique-label, .icon-thirteen-plus-limited-unique-obc-label, .icon-thirteen-plus-limited-unique-tbc-label, .icon-thirteen-plus-obc-label, .icon-thirteen-plus-tbc-label {
+    background-image: url('chrome-extension://extensionID/theme/itemlabel_10182018.png') !important;
+}
+
+.icon-allgears, .icon-Building, .icon-catalog, .icon-copylocked, .icon-default-games, .icon-dislike, .icon-dislike.selected, .icon-experimental-black, .icon-experimental-gray1, .icon-experimental-gray2, .icon-experimental-white, .icon-Explosive, .icon-games, .icon-inventory, .icon-like, .icon-like.selected, .icon-Melee, .icon-Musical, .icon-Navigation, .icon-nocopylocked, .icon-nogear, .icon-partialgears, .icon-playaudio, .icon-playing-counts-gray, .icon-playing-counts-gray-white-70, .icon-PowerUp, .icon-privateserver, .icon-publicserver, .icon-Ranged, .icon-share-game-to-chat, .icon-Social, .icon-Transport, .icon-votes-gray, .icon-votes-gray-white-70 {
+    background-image: url('chrome-extension://extensionID/theme/games.png') !important;
+}
+
+.icon-clanpoint, .icon-default-branded, .icon-favorite, .icon-favorite.favorited, .icon-follow-game, .icon-follow-game-gray, .icon-follow-game.disabled, .icon-follow-game.followed, .icon-leaderboard, .icon-notifications-bell, .icon-notifications-bell.disabled, .icon-notifications-bell.followed, .icon-playerpoint, .icon-robux, .icon-robux-28x28, .icon-robux-burst-banner, .icon-robux-gold, .icon-robux-gray, .icon-robux-white:not(.robux-upsell .icon-robux-white) {
+    background-image: url('chrome-extension://extensionID/theme/branded_11062018.png') !important;
+}
+
+.icon-default-dynamichead, .icon-DynamicHead-label {
+    background-image: url('chrome-extension://extensionID/theme/icon-default-dynamichead.png') !important;
+}
+/* REMOVE :not(.robux-upsell .icon-robux-white) to add robux icon on premium deal in buy robux screen */
+.icon-default-economy-28x28, .icon-robux-28x28, .icon-robux-gold-28x28, .icon-robux-gray, .icon-robux-white:not(.robux-upsell .icon-robux-white) {
+    background-image: url('chrome-extension://extensionID/theme/economy_28x28.png') !important;
+}
+
+.icon-checkmark-16x16, .icon-close-16x16, .icon-close-gray-16x16, .icon-default-generic-16x16, .icon-down-16x16, .icon-edit-16x16, .icon-left-16x16, .icon-moreinfo-16x16, .icon-red-timer-16x16, .icon-right-16x16, .icon-settings-16x16, .icon-up-16x16, .input-group-btn .input-dropdown-btn:focus .icon-down, .input-group-btn .input-dropdown-btn:hover .icon-down, .open .input-dropdown-btn .icon-down, .rbx-select-group:hover .icon-down {
+    background-image: url('chrome-extension://extensionID/theme/generic_11062018.png') !important;
+}
+
+.hat-slot {
+    background-color: #232527 !important;
+    border: 1px solid var(--theme-color-solid) !important;
+    border-radius: 5px;
+    background-image: url('chrome-extension://extensionID/theme/hat-slot.png') !important;
+    background-size: 28px !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+.hat-slot img {
+    background-color: #232527 !important;
+    border-radius: 5px;
+}
+
+.icon-default-premium-medium, .icon-premium-medium {
+    background-image: url('chrome-extension://extensionID/theme/premium_md.png') !important;
+}
+
+.shopping-cart-icon {
+    background-image: url('chrome-extension://extensionID/theme/shopping-cart.png') !important;
+}
+
+.forgot-credentials-with-email-phone .password-image {
+    background-image: url('chrome-extension://extensionID/theme/security-key.png') !important;
+}
+
+.forgot-credentials-with-email-phone .username-image {
+    background-image: url('chrome-extension://extensionID/theme/security-account.png') !important;
+}
+
+.icon-alert, .icon-default-negative, .icon-flag, .icon-lock, .icon-remove, .icon-report-darkgray, .icon-report.active, .icon-turn-off, .icon-warning, .icon-warning-orange, .vlist .list-item .list-body:hover .icon-report {
+    background-image: url('chrome-extension://extensionID/theme/negative.png') !important;
+}

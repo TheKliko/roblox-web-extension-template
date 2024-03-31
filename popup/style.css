@@ -1,0 +1,60 @@
+:root {
+    --margin: 0.5rem;
+
+
+    --background: linear-gradient(45deg, #000000, #222222) no-repeat;
+
+    --header-color: linear-gradient(0deg, #888, #fff, #888) no-repeat;
+    --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --footer-color: #fff;
+    --footer-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FONTS */
+header h1 {
+    font-family: var(--header-font);
+    background: var(--header-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer p{
+    font-family: var(--footer-font);
+    color: var(--footer-color);
+}
+
+
+
+/* MAIN */
+body {
+    margin: 0;
+    padding: var(--margin);
+    width: 250px;
+    height: 100px;
+    background: var(--background);
+    /* font-family: 'Jura'; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--margin);
+}
+header h1 {
+    /* font-family: 'Maiandra GD'; */
+    font-size: 1.5rem;
+}
+header img {
+    height: 2rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+}

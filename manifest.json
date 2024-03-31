@@ -1,0 +1,66 @@
+{
+    "manifest_version": 3,
+    "name": "Roblox mod template",
+    "version": "1.0.0",
+    "description": "Use this extension to modify the icons found on roblox.com",
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "action": {
+        "default_popup": "popup/index.html",
+        "default_icon": "images/icon-16.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.roblox.com/*"],
+            "css": ["inject.css"],
+            "js": ["inject.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [ "*://*.roblox.com/*" ],
+            "resources": [
+                "theme/actions_sm.png",
+                "theme/back-to-top.png",
+                "theme/branded_11062018.png",
+                "theme/camera.png",
+                "theme/chat_02142018.png",
+                "theme/common.png",
+                "theme/common_sm_12032018.png",
+                "theme/dropdown.png",
+                "theme/economy_28x28.png",
+                "theme/economy_small.png",
+                "theme/games.png",
+                "theme/gender-female.png",
+                "theme/gender-male.png",
+                "theme/generic_11062018.png",
+                "theme/hat-slot.png",
+                "theme/icon-broken.png",
+                "theme/icon-default-dynamichead.png",
+                "theme/itemlabel_10182018.png",
+                "theme/lock.png",
+                "theme/menu.png",
+                "theme/moderated-asset.png",
+                "theme/navigation.png",
+                "theme/passkey-upsell.png",
+                "theme/password-hide.png",
+                "theme/password-show.png",
+                "theme/premium_88x88.png",
+                "theme/premium_120x120.png",
+                "theme/premium_sm.png",
+                "theme/premium_md.png",
+                "theme/roblox_logo_08292022.png",
+                "theme/robux_130x130.png",
+                "theme/robux_156x169.png",
+                "theme/search.png",
+                "theme/shopping-cart.png",
+                "theme/ten_percent_more.png",
+                "theme/trade_icon.png"
+            ]
+        }
+    ]
+}
