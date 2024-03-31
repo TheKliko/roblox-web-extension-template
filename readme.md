@@ -40,7 +40,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 - Go to the popup folder and open `index.html`
   - Replace 'Template' with the name of your mod
   - Replace 'made by kliko' with whatever you want
-- To change the font, text color or background: open style.css and change the font-family
+- To change the font, text color or background: open style.css and change the values at lines 5-11
   - example:
   ```css
   --background: linear-gradient(45deg, #000000, #222222) no-repeat;
