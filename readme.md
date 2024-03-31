@@ -19,8 +19,8 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 - Go to the theme folder and replace the icons like you would with any other mod
 - Go back to the root directory and open inject.css in your text editor (I recommend using VSCode or Notepad++, but any other text editor will work)
 - Add your theme color to the variables at lines 29 and 30
-  - '--theme-color-solid' can't be a gradient because it's used for things like outlined buttons and active tab indicators (eg: About/Gamepasses/Server)
-    (adding a gradient anyways will result in your color becoming invisible)
+  - '--theme-color-solid' can't be a gradient because it's used for things like outlined buttons and active tab indicators (eg: About/Gamepasses/Server).
+    adding a gradient anyways will result in your color becoming invisible. If you used a gradient for your main color I recommend using the average color for this.
   - example:
     ```css
     --theme-color: linear-gradient(45deg,#990000, #ff0080) no-repeat;
