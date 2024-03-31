@@ -39,7 +39,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 
 ## Configuring your extension
 
-### Name & Description
+### Name and Description
 - Open `manifest.json`
     - Change the value at <var>name</var> to be the name of your mod
     - Change the value at <var>description</var> to be the description of your mod
