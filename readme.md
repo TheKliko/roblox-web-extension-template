@@ -32,7 +32,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 
 ### Optional items
 - Open inject.css and scroll down to line 35
-- <kbd>comment</kbd>/<kbd>uncomment</kbd> different items to **disable**/**enable**  them
+- <kbd>comment</kbd> / <kbd>uncomment</kbd> different items to <kbd>disable</kbd> / <kbd>enable</kbd>  them
 
 ### Logo & popup window
 - Go to the images folder and replace the icons with the logo of your mod
