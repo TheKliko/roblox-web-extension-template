@@ -37,10 +37,20 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 ### Logo & popup window
 - Go to the images folder and replace the icons with the logo of your mod
   - Make sure to keep the same names and dimensions
-- Go to the popup folder and open index.html
+- Go to the popup folder and open `index.html`
   - Replace 'Template' with the name of your mod
   - Replace 'made by kliko' with whatever you want
-- To change the font, open style.css and change the font-family
+- To change the font, text color or background: open style.css and change the font-family
+  - example:
+  ```css
+  --background: linear-gradient(45deg, #000000, #222222) no-repeat;
+
+  --header-color: linear-gradient(0deg, #888, #fff, #888) no-repeat;
+  --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --footer-color: #fff;
+  --footer-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  ```
 
 
 
