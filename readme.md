@@ -19,16 +19,16 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 - Go to the theme folder and replace the icons like you would with any other mod
 - Go back to the root directory and open `inject.css` in your text editor (I recommend using VSCode or Notepad++, but any other text editor will work)
 - Add your theme color to the variables at lines 29 and 30
-  - <var>--theme-color-solid</var> can't be a gradient because it's used for things like outlined buttons and active tab indicators (eg: About/Gamepasses/Server).
+    - <var>--theme-color-solid</var> can't be a gradient because it's used for things like outlined buttons and active tab indicators (eg: About/Gamepasses/Server).
     Adding a gradient anyways will result in your color becoming invisible,
     if you used a gradient for your main color I recommend using its average color.
-  - example:
+    - example:
     ```css
     --theme-color: linear-gradient(45deg,#990000, #ff0080) no-repeat;
     --theme-color-solid: #cc0037;
     ```
 - Finally, press <kbd>CTRL</kbd>+<kbd>F</kbd> to open the find and replace menu
-  - Search for <var>extensionID</var> and use the Replace All function to replace it with the ID of your extension
+    - Search for <var>extensionID</var> and use the Replace All function to replace it with the ID of your extension
 
 ### Optional items
 - Open `inject.css` and scroll down to line 35
@@ -36,10 +36,10 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 
 ### Logo & popup window
 - Go to the images folder and replace the icons with the logo of your mod
-  - Make sure to keep the same names and dimensions
+    - Make sure to keep the same names and dimensions
 - Go to the popup folder and open `index.html`
-  - Replace 'Template' with the name of your mod
-  - Replace 'made by kliko' with whatever you want
+    - Replace 'Template' with the name of your mod
+    - Replace 'made by kliko' with whatever you want
 - To change the font, text color or background: open style.css and change the values at lines 5-11
     - example:
     ```css
