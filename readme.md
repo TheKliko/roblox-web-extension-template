@@ -23,10 +23,10 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
     Adding a gradient anyways will result in your color becoming invisible,
     if you used a gradient for your main color I recommend using its average color.
     - example:
-    ```css
-    --theme-color: linear-gradient(45deg,#990000, #ff0080) no-repeat;
-    --theme-color-solid: #cc0037;
-    ```
+        ```css
+        --theme-color: linear-gradient(45deg,#990000, #ff0080) no-repeat;
+        --theme-color-solid: #cc0037;
+        ```
 - Finally, press <kbd>CTRL</kbd>+<kbd>F</kbd> to open the find and replace menu
     - Search for <var>extensionID</var> and use the Replace All function to replace it with the ID of your extension
 
