@@ -26,7 +26,7 @@ Follow these instructions to add your mod to Roblox web
     --theme-color: linear-gradient(45deg,#990000, #ff0080) no-repeat;
     --theme-color-solid: #cc0037;
     ```
-- Finally, press `CTRL+F` to open the find and replace menu
+- Finally, press <kbd>CTRL</kbd>+<kbd>F</kbd> to open the find and replace menu
   - Search for 'extensionID' and use the Replace All function to replace it with the ID of your extension
 
 ### Optional items
