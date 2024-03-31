@@ -15,6 +15,7 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 
 
 ## Adding your mod
+
 ### Theme
 - Go to the theme folder and replace the icons like you would with any other mod
 - Go back to the root directory and open `inject.css` in your text editor (I recommend using VSCode or Notepad++, but any other text editor will work)
@@ -33,6 +34,12 @@ Follow these instructions to add your mod to <a href="https://www.roblox.com">ro
 ### Optional items
 - Open `inject.css` and scroll down to line 35
 - <kbd>comment</kbd> / <kbd>uncomment</kbd> different items to <kbd>disable</kbd> / <kbd>enable</kbd>  them
+
+
+
+## Configuring your extension
+
+### Name & Description
 
 ### Logo & popup window
 - Go to the images folder and replace the icons with the logo of your mod
